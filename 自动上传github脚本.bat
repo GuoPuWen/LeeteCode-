@@ -6,13 +6,11 @@ echo ===========================================================================
 echo.
 
 set /p change=请输入commit名：
-echo.
-cd "你的项目地址路径"
 
-git pull
+
 git add .
 git commit -m %change%
-git push
+git push origin master
 
 echo.
 echo ===================================================================================
